@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math Trainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkI-s8-g5M">
-                                <rect key="frame" x="37" y="147" width="316" height="60"/>
+                                <rect key="frame" x="37" y="207" width="316" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an Operation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PT-uW-C18">
-                                <rect key="frame" x="114.66666666666669" y="277" width="161" height="21"/>
+                                <rect key="frame" x="114.66666666666669" y="307" width="161" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9e2-OL-ZiY">
-                                <rect key="frame" x="105" y="368" width="80" height="108"/>
+                                <rect key="frame" x="95" y="368" width="80" height="108"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUp-cN-laY">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -48,6 +48,9 @@
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cd-7W-i1F"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6z-xP-Q9H">
                                         <rect key="frame" x="0.0" y="87" width="80" height="21"/>
@@ -68,9 +71,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bE0-Ot-fLe">
-                                <rect key="frame" x="205" y="368" width="80" height="108"/>
+                                <rect key="frame" x="215" y="368" width="80" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tht-dh-YB2">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tht-dh-YB2">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
@@ -79,7 +82,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+">
+                                        <buttonConfiguration key="configuration" style="plain" title="-">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -87,6 +90,9 @@
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dro-yc-Fka"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-AP-TLb">
                                         <rect key="frame" x="0.0" y="87" width="80" height="21"/>
@@ -107,9 +113,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obF-hn-KKC">
-                                <rect key="frame" x="205" y="496" width="80" height="108"/>
+                                <rect key="frame" x="215" y="496" width="80" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDU-EJ-4cv">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDU-EJ-4cv">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
@@ -118,7 +124,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+">
+                                        <buttonConfiguration key="configuration" style="plain" title="/">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
@@ -126,6 +132,9 @@
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="od3-OV-dqx"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-7b-PPl">
                                         <rect key="frame" x="0.0" y="87" width="80" height="21"/>
@@ -146,9 +155,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USU-N2-qBu">
-                                <rect key="frame" x="105" y="496" width="80" height="108"/>
+                                <rect key="frame" x="95" y="496" width="80" height="108"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo4-0f-T5E">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo4-0f-T5E">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
@@ -157,14 +166,17 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="*">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="41"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4lp-Rw-l5H"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qal-8k-lN3">
                                         <rect key="frame" x="0.0" y="87" width="80" height="21"/>
@@ -189,20 +201,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9e2-OL-ZiY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2Tl-Zp-1oz"/>
-                            <constraint firstItem="9e2-OL-ZiY" firstAttribute="top" secondItem="3PT-uW-C18" secondAttribute="bottom" constant="70" id="7sJ-bO-cem"/>
+                            <constraint firstItem="9e2-OL-ZiY" firstAttribute="top" secondItem="3PT-uW-C18" secondAttribute="bottom" constant="40" id="7sJ-bO-cem"/>
                             <constraint firstItem="9e2-OL-ZiY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HLa-TA-ODd"/>
                             <constraint firstItem="3PT-uW-C18" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LYR-Z5-xW3"/>
-                            <constraint firstItem="9e2-OL-ZiY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="Lr2-TK-zRe"/>
-                            <constraint firstItem="bE0-Ot-fLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="NGP-jh-ctO"/>
+                            <constraint firstItem="9e2-OL-ZiY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="Lr2-TK-zRe"/>
+                            <constraint firstItem="bE0-Ot-fLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="NGP-jh-ctO"/>
                             <constraint firstItem="obF-hn-KKC" firstAttribute="centerX" secondItem="bE0-Ot-fLe" secondAttribute="centerX" id="edN-4v-o7b"/>
                             <constraint firstItem="bE0-Ot-fLe" firstAttribute="centerY" secondItem="9e2-OL-ZiY" secondAttribute="centerY" id="gp2-1g-vzW"/>
                             <constraint firstItem="tkI-s8-g5M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jim-Jo-OdQ"/>
-                            <constraint firstItem="3PT-uW-C18" firstAttribute="top" secondItem="tkI-s8-g5M" secondAttribute="bottom" constant="70" id="lgw-Ic-zXR"/>
+                            <constraint firstItem="3PT-uW-C18" firstAttribute="top" secondItem="tkI-s8-g5M" secondAttribute="bottom" constant="40" id="lgw-Ic-zXR"/>
                             <constraint firstItem="USU-N2-qBu" firstAttribute="top" secondItem="9e2-OL-ZiY" secondAttribute="bottom" constant="20" id="n5q-Ij-GX9"/>
                             <constraint firstItem="obF-hn-KKC" firstAttribute="centerY" secondItem="USU-N2-qBu" secondAttribute="centerY" id="yY6-6W-gyn"/>
                             <constraint firstItem="USU-N2-qBu" firstAttribute="centerX" secondItem="9e2-OL-ZiY" secondAttribute="centerX" id="zFx-Tr-j2R"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonsCollection" destination="zUp-cN-laY" collectionClass="NSMutableArray" id="tqA-gD-xHB"/>
+                        <outletCollection property="buttonsCollection" destination="Tht-dh-YB2" collectionClass="NSMutableArray" id="qpD-Hc-85P"/>
+                        <outletCollection property="buttonsCollection" destination="vo4-0f-T5E" collectionClass="NSMutableArray" id="CVm-Q8-Xy6"/>
+                        <outletCollection property="buttonsCollection" destination="hDU-EJ-4cv" collectionClass="NSMutableArray" id="3tc-pP-zrK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
