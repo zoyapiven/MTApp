@@ -15,6 +15,9 @@ class ViewController: UIViewController {
 // MARK: - IBOutlets
     @IBOutlet var buttonsCollection: [UIButton]!
     
+// MARK: - Properties
+    private var selectedType: MathTypes = .add
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +25,24 @@ class ViewController: UIViewController {
         configurebuttons()
     }
 
-    // MARK: - IBOutlets
+    // MARK: - Actions
     @IBAction func buttonsAction(_ sender: UIButton) {
         // нажатие на любую из кнопок будет обрабатываться в этой функции
-        print("You've pushed the Button")
         // sender.tag добавляет уникальное св-во для каждой копки
+        selectedType = MathTypes(rawValue: sender.tag) ?? .add
+        performSegue(withIdentifier: "goToNext", sender: sender)
     }
     
+    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) { }
+    
     // MARK: - Methods
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewControler = segue.destination as? TrainViewController {
+            viewControler.type = selectedType
+        }
+    }
+    
     private func configurebuttons() {
         // add shadow
         buttonsCollection.forEach { button in
