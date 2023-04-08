@@ -11,13 +11,14 @@ final class TrainViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var firsButton: UIButton!
     
+    @IBOutlet weak var testCouterLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var secondButton: UIButton!
     
     // MARK: - Properties
     private var count: Int = 0 {
         didSet {
-            print("Count is: \(count)")
+            testCouterLabel.text = String(count)
         }
     }
     private var mathSign: String = ""
@@ -54,9 +55,9 @@ final class TrainViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("hg")
         configureQuestion()
         configurebuttons()
-        
     }
     
     // MARK: - IBActions
@@ -95,6 +96,12 @@ final class TrainViewController: UIViewController {
         // TODO: add spetial operation for multiply and substruct (swich/ if else)
         firstNumber = Int.random(in: 1...99)
         secondNumber = Int.random(in: 1...99)
+        if type == .divide {
+            while firstNumber % secondNumber != 0 || firstNumber == secondNumber {
+                firstNumber = Int.random(in: 1...99)
+                secondNumber = Int.random(in: 1...firstNumber)
+            }
+        }
         let question: String = "\(firstNumber) \(mathSign) \(secondNumber) ="
         questionLabel.text = question
     }
@@ -118,6 +125,8 @@ final class TrainViewController: UIViewController {
             }
         }
     }
+    
 }
+
 
 

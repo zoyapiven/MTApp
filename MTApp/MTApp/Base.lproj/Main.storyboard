@@ -289,20 +289,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT7-kd-Lgh"/>
                                     <action selector="secondButton:" destination="KD0-bn-bsN" eventType="touchUpInside" id="HxZ-ao-LwB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-pY-wPA">
+                                <rect key="frame" x="174" y="203.66666666666666" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F0Z-ma-0c8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="EFS-pY-wPA" firstAttribute="centerX" secondItem="mWe-Qf-cN1" secondAttribute="centerX" id="5Ha-UA-ap1"/>
                             <constraint firstItem="ndg-g3-Dbw" firstAttribute="centerX" secondItem="mWe-Qf-cN1" secondAttribute="centerX" id="BG7-xy-ESj"/>
                             <constraint firstItem="ndg-g3-Dbw" firstAttribute="centerY" secondItem="mWe-Qf-cN1" secondAttribute="centerY" constant="-30" id="Nt2-xZ-mtc"/>
                             <constraint firstItem="CsT-vQ-gJR" firstAttribute="centerX" secondItem="mWe-Qf-cN1" secondAttribute="centerX" constant="-60" id="P5Z-Ch-evu"/>
                             <constraint firstItem="CsT-vQ-gJR" firstAttribute="top" secondItem="ndg-g3-Dbw" secondAttribute="bottom" constant="120" id="VpZ-qE-KWd"/>
                             <constraint firstItem="v6U-fX-3aq" firstAttribute="leading" secondItem="F0Z-ma-0c8" secondAttribute="leading" constant="50" id="atI-fd-Hky"/>
                             <constraint firstItem="v6U-fX-3aq" firstAttribute="top" secondItem="F0Z-ma-0c8" secondAttribute="top" constant="50" id="hyj-Lt-os9"/>
+                            <constraint firstItem="ndg-g3-Dbw" firstAttribute="top" secondItem="EFS-pY-wPA" secondAttribute="bottom" constant="115" id="luM-bS-ugJ"/>
                             <constraint firstItem="ZBk-e7-5HF" firstAttribute="centerX" secondItem="mWe-Qf-cN1" secondAttribute="centerX" constant="60" id="xgE-q6-USw"/>
                             <constraint firstItem="ZBk-e7-5HF" firstAttribute="centerY" secondItem="CsT-vQ-gJR" secondAttribute="centerY" id="zcS-LE-Iq4"/>
                         </constraints>
@@ -312,12 +319,13 @@
                         <outlet property="firsButton" destination="CsT-vQ-gJR" id="jeN-aw-ddH"/>
                         <outlet property="questionLabel" destination="ndg-g3-Dbw" id="Wr6-Uc-6sG"/>
                         <outlet property="secondButton" destination="ZBk-e7-5HF" id="6QJ-oO-xcv"/>
+                        <outlet property="testCouterLabel" destination="EFS-pY-wPA" id="nqT-zm-gtu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPl-PR-iSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="t6v-G9-VGB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="886" y="4"/>
+            <point key="canvasLocation" x="884.61538461538464" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>
