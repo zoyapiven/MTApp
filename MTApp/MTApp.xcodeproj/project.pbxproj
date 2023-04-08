@@ -13,6 +13,7 @@
 		579F120C29DBB32200D5F529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F120A29DBB32200D5F529 /* Main.storyboard */; };
 		579F120E29DBB32200D5F529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579F120D29DBB32200D5F529 /* Assets.xcassets */; };
 		579F121129DBB32200D5F529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F120F29DBB32200D5F529 /* LaunchScreen.storyboard */; };
+		579F121B29DF364400D5F529 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F121A29DF364400D5F529 /* TrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		579F120D29DBB32200D5F529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579F121029DBB32200D5F529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579F121229DBB32200D5F529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579F121A29DF364400D5F529 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				579F120429DBB32200D5F529 /* AppDelegate.swift */,
 				579F120629DBB32200D5F529 /* SceneDelegate.swift */,
 				579F120829DBB32200D5F529 /* ViewController.swift */,
+				579F121A29DF364400D5F529 /* TrainViewController.swift */,
 				579F120A29DBB32200D5F529 /* Main.storyboard */,
 				579F120D29DBB32200D5F529 /* Assets.xcassets */,
 				579F120F29DBB32200D5F529 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				579F120929DBB32200D5F529 /* ViewController.swift in Sources */,
+				579F121B29DF364400D5F529 /* TrainViewController.swift in Sources */,
 				579F120529DBB32200D5F529 /* AppDelegate.swift in Sources */,
 				579F120729DBB32200D5F529 /* SceneDelegate.swift in Sources */,
 			);
