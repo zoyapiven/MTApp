@@ -12,10 +12,10 @@ enum MathTypes: Int {
 }
 
 class ViewController: UIViewController {
-// MARK: - IBOutlets
+    // MARK: - IBOutlets
     @IBOutlet var buttonsCollection: [UIButton]!
     
-// MARK: - Properties
+    // MARK: - Properties
     private var selectedType: MathTypes = .add
     
     // MARK: - Life Cycle
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // вызвается когда загружен экран
         configurebuttons()
     }
-
+    
     // MARK: - Actions
     @IBAction func buttonsAction(_ sender: UIButton) {
         // нажатие на любую из кнопок будет обрабатываться в этой функции
@@ -53,6 +53,5 @@ class ViewController: UIViewController {
             //button.layer.shadowRadius blurs the shadow
         }
     }
-
 }
 
